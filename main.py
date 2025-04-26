@@ -26,6 +26,7 @@ def main():
     if args.output:
         output_path = args.output
     else:
+        if __debug__:
             output_path = input_path.with_name("RobloxStudioBeta_INTERNAL.exe")
         else:
             output_path = input_path # TODO: Is convenience really worth it?
